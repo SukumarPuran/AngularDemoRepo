@@ -48,12 +48,13 @@ export class DashboardComponent implements OnInit
   {
     this.Years.push(i);
   }
-  this.TeamMembersSummary =   [
-    { Region:"East", TeamMembersCount:20,TemporarilyUnavailableMembers:4 },
-    { Region:"South",TeamMembersCount:15,TemporarilyUnavailableMembers:8},
-    { Region:"West",TeamMembersCount:17,TemporarilyUnavailableMembers:1},
-    { Region:"North",TeamMembersCount:15,TemporarilyUnavailableMembers:6}
-    ];
+  this.TeamMembersSummary = this.dashboardService.getTeamMembersSummary();
+    // [
+    // { Region:"East", TeamMembersCount:20,TemporarilyUnavailableMembers:4 },
+    // { Region:"South",TeamMembersCount:15,TemporarilyUnavailableMembers:8},
+    // { Region:"West",TeamMembersCount:17,TemporarilyUnavailableMembers:1},
+    // { Region:"North",TeamMembersCount:15,TemporarilyUnavailableMembers:6}
+    // ];
    
   this.TeamMembers = [
     { Region: "East", Members:[

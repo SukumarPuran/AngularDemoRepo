@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardService } from '../dashboard.service';
 
 
 
@@ -21,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [ CommonModule],
   exports:[DashboardComponent, MyProfileComponent,AboutComponent,ProjectsComponent ],
-  providers: []
+  providers: [DashboardService]
 })
 export class AdminModule
  {
