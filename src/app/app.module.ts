@@ -15,7 +15,7 @@ import { DashboardService } from './dashboard.service';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule,AdminModule],
+  imports: [BrowserModule, AppRoutingModule,AdminModule,HttpClientModule],
   providers: [DashboardService],
   bootstrap: [AppComponent],
 })
