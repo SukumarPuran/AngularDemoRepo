@@ -29,17 +29,18 @@ import { Project } from 'src/app/admin/project';
     onSaveClick()
     {
       this.projectsService.insertProjects(this.newProject).subscribe((response) => {
-        response.map((resp) => this.projects.push(resp));
+         response.map((resp) => this.projects.push(resp));
         // var p: Project = new Project();
         // p.projectID = response.projectID;
         // p.projectName = response.projectName;
         // p.dateOfStart = response.dateOfStart;
         // p.teamSize = response.teamSize;
+        
        
 
         this.newProject.projectID = 0;
-        this.newProject.projectName = "";
-        this.newProject.dateOfstart = '';
+        this.newProject.projectName ="";
+        this.newProject.dateOfstart ="";
         this.newProject.teamSize = 0;
       }, (error) => {
         console.log(error);

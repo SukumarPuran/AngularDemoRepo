@@ -20,7 +20,7 @@ import { DashboardService } from '../dashboard.service';
     AboutComponent, 
     ProjectsComponent
   ],
-  imports: [ CommonModule],
+  imports: [ CommonModule,FormsModule],
   exports:[DashboardComponent, MyProfileComponent,AboutComponent,ProjectsComponent ],
   providers: [DashboardService]
 })
